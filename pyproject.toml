@@ -1,0 +1,28 @@
+[project]
+name = "production-ready-rag-ai-agent-in-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mousam Jha", email = "mousamjha8@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.141.1",
+    "google-genai>=2.25.0",
+    "inngest>=0.5.19",
+    "llama-index-core>=0.14.25",
+    "llama-index-readers-file>=0.7.0",
+    "openai>=3.19.2",
+    "python-dotenv>=1.2.3",
+    "qdrant-client>=1.19.1",
+    "streamlit>=1.64.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+production-ready-rag-ai-agent-in-python = "production_ready_rag_ai_agent_in_python:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
